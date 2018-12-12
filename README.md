@@ -15,6 +15,12 @@ So I am still not really into docker, I' m pretty sure there is an easier way to
 	* `pip install tensorflow --upgrade`
 6. have fun!
 
-# progress 7-12-2018
+# Progress 7-12-2018
 So today we found out that the docker image doesn't use gpu, which makes training of the convolutional autoencoder very slow!
 link: https://blog.keras.io/building-autoencoders-in-keras.html
+
+# Progress 12-12-2018
+Some code to download datasets from imagenet:
+* `wget -i list_of_images.txt --no-clobber --timeout=1 --tries=1`
+* `watch -d du -s imagenet/`
+
