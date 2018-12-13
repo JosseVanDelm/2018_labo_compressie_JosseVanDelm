@@ -23,3 +23,7 @@ link: https://blog.keras.io/building-autoencoders-in-keras.html
 Just found out `nvidia-docker` has to be installed to make use of gpu in docker.
 We are going to use the keras docker image with makefile, as found on: https://github.com/keras-team/keras/blob/master/docker
 
+# Progress 12-12-2018
+Some code to download datasets from imagenet:
+* `wget -i list_of_images.txt --no-clobber --timeout=1 --tries=1`
+* `watch -d du -s imagenet/`
